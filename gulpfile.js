@@ -1,10 +1,9 @@
-const {src, dest, watch, series} = require('gulp');
+const {src, dest, series} = require('gulp');
 
 function docsify(callback) {
     src('./src/index.html')
         .pipe(src('./src/_sidebar.md'))
         .pipe(src('./README.md'))
-        .pipe(src('./.nojekyll'))
         .pipe(dest('./docs'));
     callback();
 }

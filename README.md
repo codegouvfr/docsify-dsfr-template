@@ -7,7 +7,7 @@ Ce dépôt permet de générer un template de site de documentation basé sur le
 
 ## Utilisation
 
-- Télécharger le répertoire ([/docs](/docs)) contenant les fichiers du template.
+- Télécharger le paquet attaché à la release contenant les fichiers du template.
 - Déposer les fichiers dans votre répertoire contenant la documentation, ou commencer votre documentation à partir de ce répertoire.
 
 ## Développement
@@ -20,7 +20,7 @@ git clone git@github.com:codegouvfr/docsify-dsfr-template.git
 ```
 npm install
 ```
-- Construire le livrable dans [`/docs`](/docs) :
+- Construire les fichiers du livrable dans [`docs`](docs) :
 ```
 npm run build
 ```
@@ -28,3 +28,8 @@ npm run build
 ```
 npm run serve-sass
 ```
+
+## Packaging
+
+L'empaquetage est automatisé via le workflow github [`release.yml`](.github/workflows/release.yml).
+Ce workfow nécessite un [secret de dépôt](https://docs.github.com/fr/actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-a-repository) `GH_TOKEN` (peut être par exemple généré depuis un compte générique), correspondant à un [token d'accès classique](https://docs.github.com/fr/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#cr%C3%A9ation-dun-personal-access-token-classic), nécessitant le scope `repo`.
