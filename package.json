@@ -1,0 +1,25 @@
+{
+  "name": "@codegouvfr/docsify-dsfr-template",
+  "version": "1.0.0",
+  "description": "Un template pour construire un site de documentation en un instant avec le DSFR et docsify.",
+  "scripts": {
+    "build": "gulp & sass --load-path=node_modules/@gouvfr/dsfr/dist src/style.scss docs/assets/style.css --style compressed",
+    "serve-sass": "docsify serve docs & sass --load-path=node_modules/@gouvfr/dsfr/dist --watch src/style.scss docs/assets/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:codegouvfr/docsify-dsfr-template.git"
+  },
+  "author": {
+    "name": "Mission logiciels libres (DINUM)",
+    "email": "contact@code.gouv.fr",
+    "url": "https://code.gouv.fr/mission/"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@gouvfr/dsfr": "^1.10.2",
+    "docsify-cli": "^4.4.4",
+    "gulp": "^4.0.2",
+    "sass": "^1.69.4"
+  }
+}
