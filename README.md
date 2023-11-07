@@ -9,7 +9,7 @@ Ce dépôt permet de générer un template de site de documentation basé sur le
 
 ## Utilisation
 
-- Télécharger le paquet attaché à la release contenant les fichiers du template.
+- Télécharger le paquet attaché à la release contenant les fichiers du template [`docsfr-[latest].tar.gz`](https://github.com/codegouvfr/docsify-dsfr-template/releases/latest/).
 - Déposer les fichiers dans votre répertoire contenant la documentation, ou commencer votre documentation à partir de ce répertoire.
 
 ## Développement
