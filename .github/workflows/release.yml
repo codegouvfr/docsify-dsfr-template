@@ -18,8 +18,8 @@ jobs:
         run: |
           npm install
           npm run build
-          tar -czvf docsfr-${{ github.ref }}.tar.gz docs
+          tar -czvf docsfr-${{ github.ref_name }}.tar.gz docs
       - name: Release
-        run: gh release create ${{ github.ref }} ./docsfr-${{ github.ref }}.tar.gz
+        run: gh release create ${{ github.ref }} ./docsfr-${{ github.ref_name }}.tar.gz
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
