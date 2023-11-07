@@ -1,6 +1,6 @@
 {
   "name": "@codegouvfr/docsify-dsfr-template",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Un template pour construire un site de documentation en un instant avec le DSFR et docsify.",
   "scripts": {
     "build": "gulp & sass --no-source-map --load-path=node_modules/@gouvfr/dsfr/dist src/style.scss docs/assets/style.css --style compressed",
