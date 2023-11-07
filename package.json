@@ -3,7 +3,7 @@
   "version": "1.0.4",
   "description": "Un template pour construire un site de documentation en un instant avec le DSFR et docsify.",
   "scripts": {
-    "build": "gulp & sass --load-path=node_modules/@gouvfr/dsfr/dist src/style.scss docs/assets/style.css --style compressed",
+    "build": "gulp & sass --no-source-map --load-path=node_modules/@gouvfr/dsfr/dist src/style.scss docs/assets/style.css --style compressed",
     "serve-sass": "docsify serve docs & sass --load-path=node_modules/@gouvfr/dsfr/dist --watch src/style.scss docs/assets/style.css"
   },
   "repository": {
