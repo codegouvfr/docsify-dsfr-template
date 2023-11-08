@@ -13,7 +13,7 @@ Le rendu de la documentation utilise [docsify](https://github.com/docsifyjs/docs
 ## Utilisation
 
 - Téléchargez l'archive [`docsfr-[latest].tar.gz`](https://github.com/codegouvfr/docsify-dsfr-template/releases/latest/) lié à la dernière version du dépôt.
-- Adaptez le fichier `index.html` selon vos besoins.
+- Adaptez le fichier `index.html` selon vos besoins. En particulier, si vous souhaitez que votre documentation pointe vers un dépôt Git, décommentez la ligne du script renseignant le `repo`.
 - Commencez à rédiger votre documentation en Markdown dans ce répertoire.
 - Publiez ce répertoire via un serveur web.
 
