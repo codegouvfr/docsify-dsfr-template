@@ -1,4 +1,4 @@
-Ce dépôt permet de générer un répertoire de documentation utilisant le système de design de l'État [DSFR](https://www.systeme-de-design.gouv.fr/).
+Ce dépôt permet de générer un répertoire de documentation utilisant le [système de design de l'État (DSFR)](https://www.systeme-de-design.gouv.fr).
 
 Le rendu de la documentation utilise [docsify](https://github.com/docsifyjs/docsify).
 
