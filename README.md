@@ -1,16 +1,22 @@
-Ce dépôt permet de générer un template de site de documentation basé sur le [DSFR](https://www.systeme-de-design.gouv.fr/) et [docsify](https://github.com/docsifyjs/docsify).
+Ce dépôt permet de générer un répertoire de documentation utilisant le système de design de l'État [DSFR](https://www.systeme-de-design.gouv.fr/).
+
+Le rendu de la documentation utilise [docsify](https://github.com/docsifyjs/docsify).
 
 ![Screenshot of an example documentation website using this template.](docsify-dsfr-template.png)
 
 ## Fonctionnalités
 
-- Fonctionne via simple ajout de fichiers.
-- Configurable via les [options de docsify](https://docsify.js.org/#/configuration).
+- Docsify génère les pages web directement depuis des fichiers Markdown. Il suffit d'ajouter un fichier `.md` et de l'intégrer au menu de gauche via `_sidebar.md` pour qu'il apparaisse dans le menu.
+- Le rendu visuel est configurable via les [options disponibles pour docsify](https://docsify.js.org/#/configuration).
+- Le rendu au DSFR est à jour avec la dernière version stable.
 
 ## Utilisation
 
-- Télécharger le paquet attaché à la release contenant les fichiers du template [`docsfr-[latest].tar.gz`](https://github.com/codegouvfr/docsify-dsfr-template/releases/latest/).
-- Déposer les fichiers dans votre répertoire contenant la documentation, ou commencer votre documentation à partir de ce répertoire.
+- Téléchargez l'archive [`docsfr-[latest].tar.gz`](https://github.com/codegouvfr/docsify-dsfr-template/releases/latest/) lié à la dernière version du dépôt.
+- Commencez à rédiger votre documentation en Markdown dans ce répertoire.
+- Publiez ce répertoire via un serveur web.
+
+Par défaut, la page d'accueil est rendue depuis le fichier `README.md` contenue dans le répertoire. Pour ajouter une autre section, créez un nouveau fichier (par exemple `introduction.md`) puis ajoutez-le dans `_sidebar.md` (par exemple `* [Une introduction](introduction.md)`).
 
 ## Développement
 
@@ -31,7 +37,12 @@ npm run build
 npm run serve-sass
 ```
 
-## Packaging
+## Enpaquetage
 
-L'empaquetage est automatisé via le workflow github [`release.yml`](.github/workflows/release.yml).
-Ce workfow nécessite un [secret de dépôt](https://docs.github.com/fr/actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-a-repository) `GH_TOKEN` (peut être par exemple généré depuis un compte générique qui a un accès en écriture au dépôt), correspondant à un [token d'accès classique](https://docs.github.com/fr/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#cr%C3%A9ation-dun-personal-access-token-classic), nécessitant le scope `repo`.
+L'empaquetage est automatisé via [`release.yml`](.github/workflows/release.yml).
+
+Ce *workfow* nécessite un [secret de dépôt](https://docs.github.com/fr/actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-a-repository) `GH_TOKEN` (peut être par exemple généré depuis un compte générique qui a un accès en écriture au dépôt), correspondant à un [token d'accès classique](https://docs.github.com/fr/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#cr%C3%A9ation-dun-personal-access-token-classic), nécessitant le scope `repo`.
+
+## Licence
+
+Ce dépôt est publié sous licence [MIT](LICENSE.md).
