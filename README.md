@@ -40,9 +40,15 @@ npm run serve-sass
 
 ## Enpaquetage
 
-L'empaquetage est automatisé via [`release.yml`](.github/workflows/release.yml).
+L'empaquetage est automatisé via [`release.yml`](.github/workflows/release.yml), qui crée une *Release* contenant l'archive des fichiers nécessaires à partir d'un *tag*.
 
 Ce *workfow* nécessite un [secret de dépôt](https://docs.github.com/fr/actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-a-repository) `GH_TOKEN` (peut être par exemple généré depuis un compte générique qui a un accès en écriture au dépôt), correspondant à un [token d'accès classique](https://docs.github.com/fr/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#cr%C3%A9ation-dun-personal-access-token-classic), nécessitant le scope `repo`.
+
+Il s'exécute automatiquement à l'envoi d'un *tag* qui correspond à un numéro de version (ex. `v.1.0.1`) :
+```
+npm version 1.0.1
+git push
+```
 
 ## Licence
 
