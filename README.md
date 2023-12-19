@@ -50,6 +50,10 @@ npm version 1.0.1
 git push
 ```
 
+## Exemples et réutilisations
+
+- https://codegouvfr.github.io/sill-docs/
+
 ## Licence
 
 Ce dépôt est publié sous licence [MIT](LICENSE.md).
