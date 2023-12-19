@@ -18,7 +18,7 @@
   "license": "MIT",
   "devDependencies": {
     "@gouvfr/dsfr": "^1.10.2",
-    "docsify-cli": "^4.4.4",
+    "docsify-cli": "^1.0.0",
     "gulp": "^4.0.2",
     "sass": "^1.69.4"
   }
