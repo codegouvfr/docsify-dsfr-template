@@ -23,11 +23,12 @@ body:not(.close) {
   }
 
   .sidebar {
-    @extend .fr-sidemenu--sticky-full-height;
     background-color: var(--background-default-grey);
     height: calc(100vh - 38px);
     overflow: auto;
     overflow-y: scroll;
+    position: sticky;
+    top: 0;
 
     @media (max-width: $mobile-phone-width) {
       height: 100%;
@@ -35,6 +36,8 @@ body:not(.close) {
       position: fixed;
       top: 0;
       z-index: 1000;
+      position: sticky;
+      top: 0;
     }
 
     .app-name, .sidebar-nav {
