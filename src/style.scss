@@ -16,10 +16,12 @@ pre, code {
 
 body:not(.close) {
   main {
-    align-items: start;
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: $mobile-phone-width minmax(10px, 1fr);
+    display: flex;
+    flex-direction: row;
+
+    @media (max-width: $mobile-phone-width) {
+      overflow-x: hidden;
+    }
   }
 
   .sidebar {
@@ -29,15 +31,16 @@ body:not(.close) {
     overflow-y: scroll;
     position: sticky;
     top: 0;
+    width: $mobile-phone-width;
+    flex-shrink: 0;
 
     @media (max-width: $mobile-phone-width) {
-      height: 100%;
-      left: 0;
       position: fixed;
       top: 0;
-      z-index: 1000;
-      position: sticky;
-      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 20;
     }
 
     .app-name, .sidebar-nav {
