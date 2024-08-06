@@ -1,3 +1,5 @@
+[![img](https://img.shields.io/badge/code.gouv.fr-publi%C3%A9-orange.svg)](https://code.gouv.fr/documentation/#/publier)
+
 Ce dépôt permet de générer un répertoire de documentation utilisant le [système de design de l'État (DSFR)](https://www.systeme-de-design.gouv.fr).
 
 Le rendu de la documentation utilise [docsify](https://github.com/docsifyjs/docsify).
